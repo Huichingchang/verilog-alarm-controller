@@ -51,10 +51,15 @@ RTL (Register Transfer Level) schematic generated using Quartus:
 - **Quartus Prime** – RTL design and schematic generation  
 - **Verilog HDL** – Hardware description language
 ---
-
 ## 🧪 Simulation Example (from `monitor_log.txt`)
 
-fire_alarm=0, intruder_alarm=0 -> siren_on=0, alert_light=0 @ 0 ns fire_alarm=1, intruder_alarm=0 -> siren_on=1, alert_light=1 @ 10 ns fire_alarm=0, intruder_alarm=1 -> siren_on=1, alert_light=1 @ 20 ns fire_alarm=1, intruder_alarm=1 -> siren_on=1, alert_light=1 @ 30 ns
+| Time (ns) | fire_alarm | intruder_alarm | siren_on | alert_light |
+|-----------|------------|----------------|----------|-------------|
+| 0         | 0          | 0              | 0        | 0           |
+| 10        | 1          | 0              | 1        | 1           |
+| 20        | 0          | 1              | 1        | 1           |
+| 30        | 1          | 1              | 1        | 1           |
+
 ---
 
 ## ✅ Result
