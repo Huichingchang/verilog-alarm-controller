@@ -1,0 +1,4 @@
+fire_alarm=0, intruder_alarm=0 -> siren_on=0,alert_light=0 @ 10000 ns
+fire_alarm=1, intruder_alarm=0 -> siren_on=1,alert_light=1 @ 20000 ns
+fire_alarm=0, intruder_alarm=1 -> siren_on=1,alert_light=1 @ 30000 ns
+fire_alarm=1, intruder_alarm=1 -> siren_on=1,alert_light=1 @ 40000 ns
